@@ -1,53 +1,112 @@
-# Environment variables
+# =========================
+# Environment Variables
+# =========================
 .env
 .env.*
+!.env.example
 
-# Virtual environments
+# =========================
+# Virtual Environments
+# =========================
 venv/
 .venv/
 
-# Vector databases / embeddings
-vectorstore/
-vectorestore/
-chroma_db/
-faiss_index/
-
-# Python cache files
+# =========================
+# Python Cache
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py[cod]
 
-# Jupyter Notebook
-.ipynb_checkpoints/
+# =========================
+# Vector Databases / Embeddings
+# =========================
+vectorstore/
+vectorestore/
+chroma_db/
+faiss_index/
+*.faiss
 
-# IDE settings
-.vscode/
-.idea/
-
-# Streamlit secrets
-.streamlit/secrets.toml
-
-# Logs
-*.log
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Database files
-*.db
-*.sqlite3
-
-# Temporary files
-temp/
-tmp/
-
-# Uploaded documents / datasets
+# =========================
+# Uploaded Documents / Data
+# =========================
 data/
 uploads/
 
-# Model files
+# Keep sample files if needed
+!data/sample_rag_document.pdf
+!data/company_policy_sample.pdf
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editor Settings
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Database Files
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# Temporary Files
+# =========================
+temp/
+tmp/
+
+# =========================
+# Model Files
+# =========================
 models/
 *.bin
 *.pt
+*.safetensors
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.coverage
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+*.pid
+
+# =========================
+# Hugging Face Cache
+# =========================
+.cache/
+huggingface/
+hf_cache/
