@@ -1,0 +1,53 @@
+# Environment variables
+.env
+.env.*
+
+# Virtual environments
+venv/
+.venv/
+
+# Vector databases / embeddings
+vectorstore/
+vectorestore/
+chroma_db/
+faiss_index/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite3
+
+# Temporary files
+temp/
+tmp/
+
+# Uploaded documents / datasets
+data/
+uploads/
+
+# Model files
+models/
+*.bin
+*.pt
